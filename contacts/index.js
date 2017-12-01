@@ -3,12 +3,12 @@
 
     let friend = [
            { 
-               fname:"",
-               lname:"",
-               email:"",
-               phone:"",
-               url:"",
-               note:""
+               fname:"Apisit",
+               lname:"Sirichoke",
+               email:"58160335@go.buu.ac.th",
+               phone:"0987567846"
+               //url:"",
+               //note:""
            }
         ]
 
@@ -24,8 +24,13 @@
 
 
     //post chon
-
-
+    router.post('/insertfriend', (req, res) =>
+    {
+        let insert = req.body
+        friend.push(insert)
+        res.json(friend)    
+    }) 
+    module.exports = router
 
 
 
@@ -56,4 +61,4 @@
 
 
     
-    module.exports = router
+    //module.exports = router
