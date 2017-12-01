@@ -1,0 +1,29 @@
+[
+    {
+        "id": "0",
+        "fname": "Bennie",
+        "lname": "Acosta",
+        "email": "BennieDAcosta@teleworm.us",
+        "phone": "830-964-1656",
+        "url": "klpcenter.com",
+        "note": "4860 Parrish Avenue Sattler, TX 78130"
+    },
+    {
+        "id": "1",
+        "fname": "Shirley",
+        "lname": "Jones",
+        "email": "ShirleyDJones@jourrapide.com",
+        "phone": "909-466-6123",
+        "url": "psychicmilena.com",
+        "note": "2969 Gordon Street Rancho Cucamonga, CA 91730"
+    },
+    {
+        "id": "2",
+        "fname": "Shirley",
+        "lname": "Jones",
+        "email": "ShirleyDJones@jourrapide.com",
+        "phone": "909-466-6123",
+        "url": "psychicmilena.com",
+        "note": "2969 Gordon Street Rancho Cucamonga, CA 91730"
+    }
+]
