@@ -1,7 +1,7 @@
 {
   "name": "project-workshop",
   "version": "1.0.0",
-  "description": "",
+  "description": "57160630 ซูจี อาจาส",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
