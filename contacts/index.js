@@ -37,6 +37,11 @@ router.put('/contacts/:id', (req, res) => {
     res.json(friends)
 })
 
+//delete tew
+router.delete('/contacts/:id', (req, res) => {
+    const deletedIndex = friend.findIndex(friend => friend.id === req.params.id)
+    friend.splice(deletedIndex, 1)
+    res.send(friend)
+})
 
 module.exports = router
-
