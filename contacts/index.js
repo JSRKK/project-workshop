@@ -1,3 +1,4 @@
+
 const express = require('express')
 const router = express.Router()
 const friends = require('./db')
@@ -23,38 +24,17 @@ router.get('/contacts/:id', (req, res) => {
 })
 
 //post chon
-    router.post('/insertfriend', (req, res) =>
-    {
-        let insert = req.body
-        friend.push(insert)
-        res.json(friend)    
-    }) 
-    module.exports = router
-
-
-
-
-
-
+router.post('/insertfriend', (req, res) => {
+    let insert = req.body
+    friend.push(insert)
+    res.json(friend)
+})
 
 //put zuche
-
-
-
-
-
-
-
-
-
-
-//delete je
-
-
-
-
-
-
+router.put('/contacts/:id', (req, res) => {
+    const updateIndex = friends.findIndex(friends => friends.id === req.params.id)
+    res.json(Object.assign(friends[updateIndex], req.body))
+})
 
 
 module.exports = router
