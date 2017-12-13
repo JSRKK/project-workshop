@@ -24,16 +24,17 @@ router.get('/contacts/:id', (req, res) => {
 })
 
 //post chon
-router.post('/insertfriend', (req, res) => {
-    let insert = req.body
-    friend.push(insert)
-    res.json(friend)
+router.post('/contacts', (req, res) => {
+    let newFriend = req.body
+    friends.push(newFriend)
+    res.json(friends)
 })
 
 //put zuche
 router.put('/contacts/:id', (req, res) => {
     const updateIndex = friends.findIndex(friends => friends.id === req.params.id)
-    res.json(Object.assign(friends[updateIndex], req.body))
+    Object.assign(friends[updateIndex], req.body)
+    res.json(friends)
 })
 
 
