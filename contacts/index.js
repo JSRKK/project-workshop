@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const friends = require('./db')
 
-//get tew
+//get je
 router.get('/contacts', (req, res) => {
     let name = req.query.name
     let resFriend = []
@@ -22,18 +22,14 @@ router.get('/contacts/:id', (req, res) => {
     res.json(friends.find(friends => friends.id === req.params.id))
 })
 
-
-
-
-
-
-
-
-
 //post chon
-
-
-
+    router.post('/insertfriend', (req, res) =>
+    {
+        let insert = req.body
+        friend.push(insert)
+        res.json(friend)    
+    }) 
+    module.exports = router
 
 
 
@@ -61,6 +57,5 @@ router.get('/contacts/:id', (req, res) => {
 
 
 
-
-
 module.exports = router
+
